@@ -1,14 +1,18 @@
-# Sample Hardhat Project
+# Defi Experiment with Solidity
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project is a full stack app I used to experiment with Solidity and allowing a transfer of tokens between one user and another. The front end is written with React and Material UI. 
 
-Try running some of the following tasks:
+
+
+Running the app:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
 npx hardhat node
+```
+
+Grab a couple of the private keys and addresses after running the above, needed for importing into wallet for testing transfer functionality on client. I have Metamask as by wallet, but other providers would suffice. 
+
+```shell
 npm run deploy localhost
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+npm start
 ```
